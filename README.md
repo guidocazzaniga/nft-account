@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+# NFT Account
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This repository is an experiment of account tokenization using NFTs. Token metadata are stored directly on-chain and can evolve while being reflected on the cover image of the NFT.
 
-Try running some of the following tasks:
+## Getting Started
 
+Navigate to project directory and install the dependencies
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+cd <path-to-repo>
+npm i
+```
+then add a network to `hardhat.config.ts` and deploy the contracts:
+```shell
+npx hardhat compile
+npx hardhat run scripts/deploy.ts --network <your-network>
 ```
